@@ -14,11 +14,6 @@ class ViewController: UIViewController {
             updateUI()
         }
     }
-    var historyText: String = "" {
-        didSet {
-            updateUI()
-        }
-    }
     
     
     @IBOutlet weak var countLabel: UILabel!
@@ -28,31 +23,31 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         count = 0
-        historyText = ""
+        historyTextView.text = ""
+        updateUI()
     }
 
     @IBAction func clickPlusButton(_ sender: Any) {
         count += 1
-        historyText += "[\(getFormattedDateTime())]: значение изменилось на +1\n"
+        printHistory("значение изменилось на +1\n")
     }
     
     @IBAction func clickMinusButton(_ sender: Any) {
         if count <= 0 {
-            historyText += "[\(getFormattedDateTime())]: попытка уменьшить значение счётчика ниже 0\n"
+            printHistory("попытка уменьшить значение счётчика ниже 0\n")
             return
         }
         count -= 1
-        historyText += "[\(getFormattedDateTime())]: значение изменилось на -1\n"
+        printHistory("значение изменилось на -1\n")
     }
     
     @IBAction func clickResetButton(_ sender: Any) {
         count = 0
-        historyText += "[\(getFormattedDateTime())]: значение сброшено\n"
+            printHistory("значение сброшено\n")
     }
     
     func updateUI() {
         countLabel.text = count.description
-        historyTextView.text = historyText
     }
     
     func getFormattedDateTime() -> String {
@@ -60,6 +55,10 @@ class ViewController: UIViewController {
         dateFormat.dateFormat = "dd.MM.yyyy HH:mm:ss"
         let date = Date()
         return dateFormat.string(from: date)
+    }
+    
+    func printHistory(_ message: String) {
+        historyTextView.text += "[\(getFormattedDateTime())]: \(message)"
     }
 }
 
