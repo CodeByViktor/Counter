@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,21 +16,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="История изменений:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9jb-Dy-P65">
-                                <rect key="frame" x="22" y="499" width="350" height="150"/>
+                                <rect key="frame" x="10" y="499" width="373" height="150"/>
                                 <rect key="contentStretch" x="0.0" y="0.10000000000000001" width="1" height="0.90000000000000002"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="6XG-G2-8cZ"/>
                                     <constraint firstAttribute="height" constant="150" id="HA6-Cf-Zkb"/>
                                 </constraints>
-                                <color key="textColor" systemColor="labelColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96u-iY-NLR">
-                                <rect key="frame" x="21.666666666666657" y="659" width="350" height="100"/>
+                                <rect key="frame" x="5" y="659" width="383" height="100"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q31-bO-RUv">
-                                        <rect key="frame" x="0.0" y="0.0" width="127.33333333333333" height="100"/>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q31-bO-RUv">
+                                        <rect key="frame" x="0.0" y="0.0" width="156.66666666666666" height="100"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="minus.square.fill" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="70"/>
@@ -41,8 +39,8 @@
                                             <action selector="clickMinusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VaW-Ts-sBY"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYV-XB-Yyc">
-                                        <rect key="frame" x="127.33333333333334" y="0.0" width="95.333333333333343" height="100"/>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYV-XB-Yyc">
+                                        <rect key="frame" x="156.66666666666666" y="0.0" width="99" height="100"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="gobackward" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50"/>
@@ -53,7 +51,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdL-lX-W7b">
-                                        <rect key="frame" x="222.66666666666671" y="0.0" width="127.33333333333334" height="100"/>
+                                        <rect key="frame" x="255.66666666666671" y="0.0" width="127.33333333333334" height="100"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="plus.square.fill" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="70"/>
@@ -65,31 +63,31 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="VyM-iu-zlX"/>
                                     <constraint firstAttribute="height" constant="100" id="fVx-5n-yGo"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgf-rY-rFV">
-                                <rect key="frame" x="5" y="189" width="383" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="mhU-Cy-3NZ"/>
-                                </constraints>
+                                <rect key="frame" x="121" y="64" width="151" height="425"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="250"/>
                                 <color key="textColor" red="0.33725490196078434" green="0.68235294117647061" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9jb-Dy-P65" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2k2-sO-BgL"/>
-                            <constraint firstItem="bgf-rY-rFV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="LjX-2L-607"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="96u-iY-NLR" secondAttribute="leading" constant="-5" id="4IB-Sf-3rY"/>
+                            <constraint firstItem="96u-iY-NLR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-5" id="9vH-yM-daV"/>
+                            <constraint firstItem="9jb-Dy-P65" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-10" id="H6h-LJ-UKd"/>
+                            <constraint firstItem="bgf-rY-rFV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="LjX-2L-607"/>
                             <constraint firstItem="9jb-Dy-P65" firstAttribute="top" secondItem="bgf-rY-rFV" secondAttribute="bottom" constant="10" id="QOO-ES-lbD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="96u-iY-NLR" secondAttribute="bottom" constant="10" id="QRY-xQ-GiQ"/>
                             <constraint firstItem="96u-iY-NLR" firstAttribute="top" secondItem="9jb-Dy-P65" secondAttribute="bottom" constant="10" id="Xtb-vO-721"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bgf-rY-rFV" secondAttribute="trailing" constant="5" id="YCF-zG-gze"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bgf-rY-rFV" secondAttribute="trailing" constant="5" id="YCF-zG-gze"/>
                             <constraint firstItem="bgf-rY-rFV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YxH-sY-KUa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="bgf-rY-rFV" secondAttribute="top" constant="-5" id="bq8-8b-awK"/>
                             <constraint firstItem="96u-iY-NLR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tUz-Dp-7ko"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="9jb-Dy-P65" secondAttribute="leading" constant="-10" id="vlS-Ww-Rbj"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -108,12 +106,6 @@
         <image name="gobackward" catalog="system" width="119" height="128"/>
         <image name="minus.square.fill" catalog="system" width="128" height="114"/>
         <image name="plus.square.fill" catalog="system" width="128" height="114"/>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
