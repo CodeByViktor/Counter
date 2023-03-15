@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         count = 0
-        historyTextView.text = ""
+        historyTextView.text = "История изменений:\n"
         updateUI()
     }
 
