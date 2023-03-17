@@ -16,6 +16,7 @@
 		AB611C7929C02E9000FB8AF3 /* CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB611C7829C02E9000FB8AF3 /* CounterTests.swift */; };
 		AB611C8329C02E9000FB8AF3 /* CounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB611C8229C02E9000FB8AF3 /* CounterUITests.swift */; };
 		AB611C8529C02E9000FB8AF3 /* CounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB611C8429C02E9000FB8AF3 /* CounterUITestsLaunchTests.swift */; };
+		AB861E7729C4DA810019FB44 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = AB861E7629C4DA810019FB44 /* Readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		AB611C7E29C02E9000FB8AF3 /* CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB611C8229C02E9000FB8AF3 /* CounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterUITests.swift; sourceTree = "<group>"; };
 		AB611C8429C02E9000FB8AF3 /* CounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AB861E7629C4DA810019FB44 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,8 @@
 		AB611C5529C02E8F00FB8AF3 = {
 			isa = PBXGroup;
 			children = (
+				AB861E7E29C4DD470019FB44 /* Screenshots */,
+				AB861E7629C4DA810019FB44 /* Readme.md */,
 				AB611C6029C02E8F00FB8AF3 /* Counter */,
 				AB611C7729C02E9000FB8AF3 /* CounterTests */,
 				AB611C8129C02E9000FB8AF3 /* CounterUITests */,
@@ -125,6 +129,13 @@
 				AB611C8429C02E9000FB8AF3 /* CounterUITestsLaunchTests.swift */,
 			);
 			path = CounterUITests;
+			sourceTree = "<group>";
+		};
+		AB861E7E29C4DD470019FB44 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +244,7 @@
 			files = (
 				AB611C6E29C02E9000FB8AF3 /* LaunchScreen.storyboard in Resources */,
 				AB611C6B29C02E9000FB8AF3 /* Assets.xcassets in Resources */,
+				AB861E7729C4DA810019FB44 /* Readme.md in Resources */,
 				AB611C6929C02E8F00FB8AF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
